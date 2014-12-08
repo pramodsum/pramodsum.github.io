@@ -289,7 +289,7 @@ body.archive-template {
 }
 
 body, html {
-  background-color: #000;
+  background-color: #222;
 }
 
 h1, h2, h3,
@@ -335,7 +335,7 @@ h6 {
 }
 
 .blog-title a {
-  color: #fff;
+  color: #333;
 }
 
 .main-logo:hover {
@@ -350,7 +350,7 @@ h6 {
 .blog-tagline {
   font-size: 18px;
   margin-top: 10px;
-  color: #fff;
+  color: #333;
   position: relative;
 }
 
@@ -360,7 +360,7 @@ h6 {
   margin: 30px auto -40px auto;
   width: 200px;
   height: 1px;
-  background: #fff;
+  background: #333;
   border-radius:10px;
   bottom: -40px;
   left: 0;
@@ -620,7 +620,7 @@ tbody > tr:nth-child(odd) > th {
 ------------------------------------ */
 
 .content-home .wrapper {
-  background: url(http://heroic.ghost.io/assets/img/line.gif) top center repeat-y ;
+  background: url(/img/black-line.gif) top center repeat-y ;
 }
 
 .site-head {
@@ -987,7 +987,7 @@ h4, h5, h6 {
   text-indent: -99999em;
   position: absolute;
   width: 78%;
-  background-color: #fff;
+  background-color: #333;
   left: 0;
   height: 4px;
   border-radius: 20px;
@@ -996,7 +996,7 @@ h4, h5, h6 {
 .menu-link:before,
 .menu-link:after {
   content: ' ';
-  background-color: #fff;
+  background-color: #333;
   width: 78%;
   margin-top: -9px;
   position: absolute;
