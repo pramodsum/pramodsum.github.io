@@ -873,12 +873,12 @@ nav ul li:hover, nav ul li.active {
 }
 
 .header-post {
-  background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/img/sf.JPG);
+  background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/_includes/img/sf.JPG);
   background-size: cover; 
 }
 
 .footer-post {
-  background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/img/sangria.jpg);
+  background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/_includes/img/sangria.jpg);
   background-size: cover; 
   color: white;
 }
