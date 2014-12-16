@@ -365,6 +365,16 @@ nav ul li:hover, nav ul li.active {
   background-size: cover; 
 }
 
+.footer-post {
+  background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/img/sangria.jpg);
+  background-size: cover; 
+  color: white;
+}
+
+.footer-post .container {
+  margin-top: -50px;
+}
+
 .list-inline {
     list-style-type: none;
     margin: 0;

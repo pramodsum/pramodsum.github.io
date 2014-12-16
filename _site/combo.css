@@ -507,14 +507,6 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-welcome-to-jekyll { border-color: ; }
-  #welcome-to-jekyll { background-color:  !important; color: ; }
-  #welcome-to-jekyll a { color: ; }
-  #welcome-to-jekyll .sectiondivider { color: ; }
-
-  
-  
-  
   nav .p-courses { border-color: #27B9B1; }
   #courses { background-color: #27B9B1 !important; color: #f8f8f8; }
   #courses a { color: #f8f8f8; }
@@ -883,6 +875,16 @@ nav ul li:hover, nav ul li.active {
 .header-post {
   background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/img/sf.JPG);
   background-size: cover; 
+}
+
+.footer-post {
+  background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/img/sangria.jpg);
+  background-size: cover; 
+  color: white;
+}
+
+.footer-post .container {
+  margin-top: -50px;
 }
 
 .list-inline {
