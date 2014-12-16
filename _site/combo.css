@@ -486,20 +486,20 @@ html { box-sizing: border-box; }
 .text-green a { color: #9bcf2f; }
 .bg-green     { background-color: #9bcf2f !important; }
 
-.border-purple { border-color: #c869bf !important; }
-.text-purple   { color: #c869bf; }
-.text-purple a { color: #c869bf; }
-.bg-purple     { background-color: #c869bf !important; }
+.border-purple { border-color: #AE81FF !important; }
+.text-purple   { color: #AE81FF; }
+.text-purple a { color: #AE81FF; }
+.bg-purple     { background-color: #AE81FF !important; }
 
-.border-orange { border-color: #fab125 !important; }
-.text-orange   { color: #fab125; }
-.text-orange a { color: #fab125; }
-.bg-orange     { background-color: #fab125 !important; }
+.border-orange { border-color: #EEED17 !important; }
+.text-orange   { color: #EEED17; }
+.text-orange a { color: #EEED17; }
+.bg-orange     { background-color: #EEED17 !important; }
 
-.border-turquoise { border-color: #0fbfcf !important; }
-.text-turquoise   { color: #0fbfcf; }
-.text-turquoise a { color: #0fbfcf; }
-.bg-turquoise     { background-color: #0fbfcf !important; }
+.border-turquoise { border-color: #27B9B1 !important; }
+.text-turquoise   { color: #27B9B1; }
+.text-turquoise a { color: #27B9B1; }
+.bg-turquoise     { background-color: #27B9B1 !important; }
 
 
 /* ----- per-post colors! ----- */
@@ -507,50 +507,42 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-video { border-color: #0fbfcf; }
-  #video { background-color: #0fbfcf !important; color: #f8f8f8; }
-  #video a { color: #f8f8f8; }
-  #video .sectiondivider { color: #0fbfcf; }
+  nav .p-welcome-to-jekyll { border-color: ; }
+  #welcome-to-jekyll { background-color:  !important; color: ; }
+  #welcome-to-jekyll a { color: ; }
+  #welcome-to-jekyll .sectiondivider { color: ; }
 
   
   
   
-  nav .p-updating { border-color: #c869bf; }
-  #updating { background-color: #c869bf !important; color: #f8f8f8; }
-  #updating a { color: #f8f8f8; }
-  #updating .sectiondivider { color: #c869bf; }
+  nav .p-courses { border-color: #27B9B1; }
+  #courses { background-color: #27B9B1 !important; color: #f8f8f8; }
+  #courses a { color: #f8f8f8; }
+  #courses .sectiondivider { color: #27B9B1; }
 
   
   
   
-  nav .p-usage { border-color: #63BD2F; }
-  #usage { background-color: #63BD2F !important; color: #f8f8f8; }
-  #usage a { color: #f8f8f8; }
-  #usage .sectiondivider { color: #63BD2F; }
+  nav .p-leadership { border-color: #EEED17; }
+  #leadership { background-color: #EEED17 !important; color: #111111; }
+  #leadership a { color: #111111; }
+  #leadership .sectiondivider { color: #EEED17; }
 
   
   
   
-  nav .p-details { border-color: #fab125; }
-  #details { background-color: #fab125 !important; color: #111111; }
-  #details a { color: #111111; }
-  #details .sectiondivider { color: #fab125; }
+  nav .p-experience { border-color: #AE81FF; }
+  #experience { background-color: #AE81FF !important; color: #f8f8f8; }
+  #experience a { color: #f8f8f8; }
+  #experience .sectiondivider { color: #AE81FF; }
 
   
   
   
-  nav .p-why { border-color: #49a7e9; }
-  #why { background-color: #49a7e9 !important; color: #f8f8f8; }
-  #why a { color: #f8f8f8; }
-  #why .sectiondivider { color: #49a7e9; }
-
-  
-  
-  
-  nav .p-intro { border-color: #f8f8f8; }
-  #intro { background-color: #f8f8f8 !important; color: #111111; }
-  #intro a { color: #111111; }
-  #intro .sectiondivider { color: #f8f8f8; }
+  nav .p-projects { border-color: #27B9B1; }
+  #projects { background-color: #27B9B1 !important; color: #f8f8f8; }
+  #projects a { color: #f8f8f8; }
+  #projects .sectiondivider { color: #27B9B1; }
 
 
 
@@ -884,3 +876,125 @@ nav ul li:hover, nav ul li.active {
   }
 }
 
+.header-img {
+  border-radius: 50%;
+}
+
+.header-post {
+  background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/img/sf.JPG);
+  background-size: cover; 
+}
+
+.list-inline {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.post {
+  padding-bottom: 20px;
+}
+
+.container p:first-of-type {
+  margin-top: 0px;
+}
+
+.btn-outline {
+  border: solid 2px white;
+  font-size: 20px;
+  color: white;
+  background: 0 0;
+  transition: all .3s ease-in-out;
+}
+.btn-social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 100%;
+  text-align: center;
+}
+.btn-social :first-child {
+  top: 6px;
+  bottom: 0;
+  line-height: 34px;
+  font-size: 34px;
+  text-align: center;
+  border-right: 0px !important;
+}
+.btn-circle {
+  padding: 7px 0px;
+  border: 2px solid white;
+  border-radius: 34px;
+  color: white;
+  background: 0 0;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.scroll {
+  .btn-circle {
+    width: 70px;
+    height: 70px;
+    font-size: 34px;
+  }
+  .btn-circle i.animated {
+    margin: auto;
+  }
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: 0;
+  color: rgb(94, 255, 212);
+  border-color: rgb(191, 98, 167);
+  background: rgba(191, 98, 167, 0.1);
+}
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+  0 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0 {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
