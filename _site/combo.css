@@ -823,6 +823,7 @@ nav ul li:hover, nav ul li.active {
   nav ul li {
     min-width:60px;
     line-height:40px;
+    padding: 3px;
   }
 }
 
