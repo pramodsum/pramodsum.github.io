@@ -1,93 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en">
 <head>
-
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="ninja.png">
-
-  <title>Pramod.Ninja</title>
-
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-  <link rel="stylesheet" type="text/css" href="screen.css" />
-
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,400italic|Open+Sans:400italic,600italic,400,600|Coda:800)" media="screen" />
-  <link rel="canonical" href="http://pramod.ninja/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+	<meta name="keywords" content="{{ site.keywords }}">
+	<meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="combo.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
+	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
 </head>
-<body class="home-template">
-  <div id="bg" class="" style="background-image: url(./img/sf.JPG)"></div>
+<body>
+  <div id="main">
 
-  <div id="wrap">
+    <nav><ul>
+      {% for node in site.posts reversed %}
+        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
+      {% endfor %}
+    </ul></nav>
 
-    <header class="site-head animated fadeInDownBig">
-      <a class="main-logo" href="http://pramod.ninja">
-        <center>
-          <img class="img-responsive img-circle" src="https://avatars1.githubusercontent.com/u/3299001?v=3&s=460" />
-        </center>
-      </a>
-      <div class="blog-title"><a href="http://pramod.ninja">Sumedha Pramod</a></div>
-      <div class="blog-tagline">Home</div>
-    </header>
 
-    <section class="content-home animated fadeIn" role="main">
-      <div class="wrapper">
-
-        <article class="animated post fadeInRightBig odd">
-          <div class="inner">
-            <h2 class="post-title"><a href="/heroic-1-0-7/">Websites</a></h2>
-            <p>We've just released Heroic 1.0.7 for Ghost 0.5. What have we added? Multi-Author pages Tag pages Updated the JavaScript to load via[&hellip;]</p>
-            <a class="more" href="./websites/">Go</a>
-          </div>     
-        </article>
-
-        <div class="clear"></div>
-
-        <article class="animated post fadeInLeftBig even ">
-          <div class="inner">
-            <h2 class="post-title"><a href="/heroic-1-0-7/">Apps</a></h2>
-            <p>We've just released Heroic 1.0.7 for Ghost 0.5. What have we added? Multi-Author pages Tag pages Updated the JavaScript to load via[&hellip;]</p>
-            <a class="more" href="./apps/">Go</a>
-          </div>     
-        </article>
-
-        <div class="clear"></div>
-
-        <article class="animated post fadeInRightBig odd">
-          <div class="inner">
-            <h2 class="post-title"><a href="/heroic-1-0-7/">Games</a></h2>
-            <p>We've just released Heroic 1.0.7 for Ghost 0.5. What have we added? Multi-Author pages Tag pages Updated the JavaScript to load via[&hellip;]</p>
-            <a class="more" href="./games/">Go</a>
-          </div>     
-        </article>
-
-        <div class="clear"></div>
-
-      </div> 
-    </section>
-
-    <footer class="main-footer">
-      <div class="wrapper text-center">
-        <p>
-          Made with
-          <span style="color: red;">&hearts;</span>
-          <span>by</span>
-          <a href="http://sumninjacode.io"> Sumedha Pramod</a>
-          <span>&#124;</span>
-          <a href='mailto:issues@uppukhara.com'>Issues</a>
-        </p>      
+    {% for page in site.posts reversed %}
+      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+      <div id="{{id}}" class="section p-{{id}}">
+        {% if page.icon %}
+        <div class="subtlecircle sectiondivider imaged">
+          <img src="{{page.icon}}" alt="section icon" />
+          <h5 class="icon-title">{{ page.title }}</h5>
+        </div>
+        {% elsif page.fa-icon %}
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">{{ page.title }}</h5>
+        </div>
+        {% endif %}
+        <div class="container {{ page.style }}">
+          {{ page.content }}
+        </div>
       </div>
-    </footer>
+    {% endfor %}
 
+
+    <div id="footer" class="section text-white">
+      <div class="container">
+        {% capture foottext %} {% include footer.md %} {% endcapture %}
+        {{ foottext | markdownify }}
+      </div>
+    </div>
   </div>
 
-  <script src="http://heroic.ghost.io/public/jquery.min.js?v=3718077cce"></script>
-
-  <script type="text/javascript" src="http://heroic.ghost.io/assets/js/plugins.min.js?v=3718077cce"></script>
-  <script type="text/javascript" src="http://heroic.ghost.io/assets/js/scripts.min.js?v=3718077cce"></script>
+{% include analytics.html %}
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="site.js"></script>
 </html>
-
