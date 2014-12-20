@@ -621,6 +621,165 @@ hr {
 /* ----- Main Structure ----- */
 /* ---------------------------*/
 
+.list-inline {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.post {
+  padding-bottom: 20px;
+}
+
+.container p:first-of-type {
+  margin-top: 0px;
+}
+/* ----- sections/articles ----- */
+
+.section {
+  position:relative;
+  display:block;
+  width:100%;
+  min-height:300px;
+  padding:210px 0;
+  background:url(img/bgnoise.png);
+  /* generated noise from noisetexturegenerator.com */
+}
+
+.section:first-of-type {
+    padding-top: 140px;
+}
+
+.subtlecircle {
+  text-align:center;
+  z-index:3;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 1px 15px rgba(0,0,0,0.05);
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAF0lEQVQIHWP8//+/MQMaYELjg7kUCgIASm8DOqGzfp8AAAAASUVORK5CYII=);
+}
+
+.sectiondivider {
+  width:270px;
+  height:270px;
+  padding:15px;
+  position:absolute;
+  top:-135px;
+  left:50%;
+  margin-left:-135px;
+}
+
+.sectiondivider img {
+  width:200px;
+  height:240px;
+  position: static;
+  margin-top: -20px;
+}
+
+.sectiondivider .fa-stack {
+  font-size: 130px;
+  position: static;
+  margin-top: -8px;
+}
+.sectiondivider .fa-circle { color: #fff; }
+
+.sectiondivider h5 {
+  font-size:15px;
+  font-weight:700;
+  text-transform:uppercase;
+  position:absolute;
+  bottom:50px;
+  left:auto;
+  text-align:center;
+  display:block;
+  z-index:6;
+  width:240px;
+}
+
+.sectiondivider.imaged {
+  text-shadow: 1px 1px 3px #333;
+}
+
+.columned {
+  -webkit-column-count: 3;
+  -moz-column-count:    3;
+  column-count:         3;
+
+  -webkit-column-gap: 40px;
+  -moz-column-gap:    40px;
+  column-gap:         40px;
+
+  -webkit-column-rule: 1px outset rgba(255,255,255,0.5);
+  -moz-column-rule:    1px outset rgba(255,255,255,0.5);
+  column-rule:         1px outset rgba(255,255,255,0.5);
+}
+.longlist { font-size: 14px !important; }
+.longlist li { margin-bottom: 3px; }
+
+/* anything not desktop */
+@media only screen and (max-width: 767px) {
+  .container h1 { font-size: 30px; }
+  .container h2 { font-size: 24px; }
+  .container h3 { font-size: 20px; }
+  .container h4 { font-size: 18px; }
+
+
+  .section { padding:130px 0; }
+  .sectiondivider {
+    width:200px;
+    height:200px;
+    padding:15px;
+    top:-100px;
+    margin-left:-100px;
+  }
+  .sectiondivider img {
+    width:150px;
+    height:180px;
+  }
+  .sectiondivider .fa-stack {
+    font-size: 100px;
+    margin-top: -14px;
+  }
+  .sectiondivider h5 {
+    font-size:15px;
+    bottom:30px;
+    width:170px
+  }
+
+  .columned {
+    -webkit-column-count: 2;
+    -moz-column-count:    2;
+    column-count:         2;
+  }
+}
+#footer {
+  padding: 8px 0;
+  min-height:0;
+  text-align:center;
+  background-color:#2e2e2e;
+  background-image:none;
+}
+#footer .container p { font-size:13px; margin:0; }
+
+.footer-post {
+  background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/_includes/img/sangria.jpg);
+  background-size: cover; 
+  background-position: center; 
+  
+  /* NOT SURE IF THIS IS THE WAY TO MAKE SURE THE BG WIDTH FITS WINDOW */
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+.footer-post .container {
+  margin-top: -50px;
+}
 /* ----- top menu ----- */
 
 
@@ -675,102 +834,6 @@ nav ul li:hover, nav ul li.active {
 }
 
 
-/* ----- sections/articles ----- */
-
-.section {
-  position:relative;
-  display:block;
-  width:100%;
-  min-height:300px;
-  padding:210px 0;
-  background:url(img/bgnoise.png);
-  /* generated noise from noisetexturegenerator.com */
-}
-
-.section:first-of-type {
-    padding-top: 140px;
-}
-
-
-#footer {
-  padding: 8px 0;
-  min-height:0;
-  text-align:center;
-  background-color:#2e2e2e;
-  background-image:none;
-}
-#footer .container p { font-size:13px; margin:0; }
-
-.subtlecircle {
-  text-align:center;
-  z-index:3;
-  border-radius:50%;
-  -moz-border-radius:50%;
-  -webkit-border-radius:50%;
-  box-shadow: 0px 1px 15px rgba(0,0,0,0.05);
-  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAF0lEQVQIHWP8//+/MQMaYELjg7kUCgIASm8DOqGzfp8AAAAASUVORK5CYII=);
-}
-
-.sectiondivider {
-  width:270px;
-  height:270px;
-  padding:15px;
-  position:absolute;
-  top:-135px;
-  left:50%;
-  margin-left:-135px;
-}
-
-.sectiondivider img {
-  width:200px;
-  height:240px;
-  position: static;
-  margin-top: -20px;
-}
-
-.sectiondivider .fa-stack {
-  font-size: 130px;
-  position: static;
-  margin-top: -8px;
-}
-.sectiondivider .fa-circle { color: #fff; }
-
-.sectiondivider h5 {
-  font-size:15px;
-  font-weight:700;
-  text-transform:uppercase;
-  position:absolute;
-  bottom:50px;
-  left:auto;
-  text-align:center;
-  display:block;
-  z-index:6;
-  width:240px;
-}
-
-.sectiondivider.imaged {
-  text-shadow: 1px 1px 3px #333;
-}
-
-
-.columned {
-  -webkit-column-count: 3;
-  -moz-column-count:    3;
-  column-count:         3;
-
-  -webkit-column-gap: 40px;
-  -moz-column-gap:    40px;
-  column-gap:         40px;
-
-  -webkit-column-rule: 1px outset rgba(255,255,255,0.5);
-  -moz-column-rule:    1px outset rgba(255,255,255,0.5);
-  column-rule:         1px outset rgba(255,255,255,0.5);
-}
-.longlist { font-size: 14px !important; }
-.longlist li { margin-bottom: 3px; }
-
-
-
 /* ----- fork on github banner ----- */
 #forkongithub a {
   color:#fff;
@@ -815,8 +878,6 @@ nav ul li:hover, nav ul li.active {
   }
 }
 
-
-
 /* mid size (tablets, landscapes) */
 @media only screen and (max-width: 679px) {
   nav { font-size:11px; }
@@ -832,43 +893,6 @@ nav ul li:hover, nav ul li.active {
   nav ul li { min-width:90px; line-height:20px; }
 }
 
-/* anything not desktop */
-@media only screen and (max-width: 767px) {
-	.container h1 { font-size: 30px; }
-	.container h2 { font-size: 24px; }
-	.container h3 { font-size: 20px; }
-	.container h4 { font-size: 18px; }
-
-
-  .section { padding:130px 0; }
-  .sectiondivider {
-    width:200px;
-    height:200px;
-    padding:15px;
-    top:-100px;
-    margin-left:-100px;
-  }
-  .sectiondivider img {
-    width:150px;
-    height:180px;
-  }
-  .sectiondivider .fa-stack {
-    font-size: 100px;
-    margin-top: -14px;
-  }
-  .sectiondivider h5 {
-    font-size:15px;
-    bottom:30px;
-    width:170px
-  }
-
-  .columned {
-    -webkit-column-count: 2;
-    -moz-column-count:    2;
-    column-count:         2;
-  }
-}
-
 .header-img {
   border-radius: 50%;
 }
@@ -877,35 +901,6 @@ nav ul li:hover, nav ul li.active {
   background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/_includes/img/sf.JPG);
   background-size: cover; 
 }
-
-.footer-post {
-  background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/_includes/img/sangria.jpg);
-  background-size: cover; 
-  color: white;
-}
-
-.footer-post .container {
-  margin-top: -50px;
-}
-
-.list-inline {
-    list-style-type: none;
-    margin: 0;
-    padding: 5px;
-}
-
-.list-inline li {
-  display: inline;
-}
-
-.post {
-  padding-bottom: 20px;
-}
-
-.container p:first-of-type {
-  margin-top: 0px;
-}
-
 .btn-outline {
   border: solid 2px white;
   font-size: 20px;
