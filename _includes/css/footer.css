@@ -11,13 +11,5 @@
   background: url(https://raw.githubusercontent.com/pramodsum/pramodsum.github.io/master/_includes/img/sangria.jpg);
   background-size: cover; 
   background-position: center; 
-  
-  /* NOT SURE IF THIS IS THE WAY TO MAKE SURE THE BG WIDTH FITS WINDOW */
-  width: 100%;
-  height: auto;
   color: white;
-}
-
-.footer-post .container {
-  margin-top: -50px;
 }
